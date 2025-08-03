@@ -8,13 +8,13 @@ A simple Spring Boot application demonstrating an Employee Management System wit
 * **Role-based Authorization**:
 
   * Both roles can **view** employee data (GET endpoints).
-  * Only `ADMIN` can **create**, **update**, or **delete** employees (POST, PUT, DELETE endpoints).
+  * Only `ADMIN` can  **delete** employees (POST, PUT, DELETE endpoints).
 * **CRUD Operations** on Employee entities:
 
   * Create a new employee
   * Retrieve all employees or by ID
   * Update an existing employee
-  * Delete an employee
+  * Delete an employee ( only by admin)
 
 ## Technologies
 
@@ -79,7 +79,7 @@ Base URL: `http://localhost:8080/api/employees`
 | ----------- | -------- | --------------------------- | ------------- |
 | GET         | `/`      | Get all employees           | USER, ADMIN   |
 | GET         | `/{id}`  | Get employee by ID          | USER, ADMIN   |
-| POST        | `/`      | Create a new employee       | ADMIN         |
+| POST        | `/`      | Create a new employee       | ADMIN, USER   |
 | PUT         | `/{id}`  | Update an existing employee | ADMIN         |
 | DELETE      | `/{id}`  | Delete an employee          | ADMIN         |
 
