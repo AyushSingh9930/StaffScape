@@ -79,7 +79,7 @@ Base URL: `http://localhost:8080/api/employees`
 | ----------- | -------- | --------------------------- | ------------- |
 | GET         | `/`      | Get all employees           | USER, ADMIN   |
 | GET         | `/{id}`  | Get employee by ID          | USER, ADMIN   |
-| POST        | `/`      | Create a new employee       | ADMIN, USER   |
+| POST        | `/`      | Create a new employee       | ADMIN         |
 | PUT         | `/{id}`  | Update an existing employee | ADMIN         |
 | DELETE      | `/{id}`  | Delete an employee          | ADMIN         |
 
