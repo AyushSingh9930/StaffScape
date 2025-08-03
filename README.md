@@ -1,4 +1,4 @@
-# StaffScape
+# StaffSphere
 
 A simple Spring Boot application demonstrating an Employee Management System with in-memory user authentication and role-based access control.
 
