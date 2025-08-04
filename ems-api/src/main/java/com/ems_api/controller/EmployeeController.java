@@ -38,7 +38,7 @@ public class EmployeeController
             return ResponseEntity.notFound().build();       // 404, no body
         }
     }
-    @PreAuthorize("hasRole('ADMIN') or hasRole('USER')")
+    @PreAuthorize("hasRole('ADMIN'))
     @GetMapping("/employees")
     public ResponseEntity<List<Employee>> getAllEmployees()
     {
