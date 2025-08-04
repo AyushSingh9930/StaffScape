@@ -77,7 +77,7 @@ Base URL: `http://localhost:8080/api/employees`
 
 | HTTP Method | Endpoint | Description                 | Roles Allowed |
 | ----------- | -------- | --------------------------- | ------------- |
-| GET         | `/`      | Get all employees           | USER, ADMIN   |
+| GET         | `/`      | Get all employees           | ADMIN         |
 | GET         | `/{id}`  | Get employee by ID          | USER, ADMIN   |
 | POST        | `/`      | Create a new employee       | ADMIN         |
 | PUT         | `/{id}`  | Update an existing employee | ADMIN         |
